@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 - ApexPlanet Internship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2>My Web Project</h2>
+            <div class="nav-links">
+                <a href="#contact">Contact</a>
+                <a href="#layout">Responsive Layout</a>
+                <a href="#todo">To-Do List</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Introduction -->
+        <section class="hero">
+            <h1>Intermediate HTML, CSS & JavaScript</h1>
+            <p>Welcome to my Task 2 Web Development Project!</p>
+            <p>AICTE Internship | ApexPlanet Software Pvt. Ltd.</p>
+        </section>
+
+        <!-- Activity 1: Contact Form -->
+        <section id="contact" class="section">
+            <h2>1. Contact Form</h2>
+            <p>Fill in the details to contact us.</p>
+
+            <form id="contactForm">
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name">
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email">
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject"
+                       placeholder="Enter subject">
+
+                <label for="message">Message</label>
+                <textarea id="message"
+                          placeholder="Write your message"></textarea>
+
+                <button type="submit">Submit Form</button>
+
+                <p id="formMessage" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+        <!-- Activity 3: Responsive Layout -->
+        <section id="layout" class="section">
+            <h2>2. Responsive Layout</h2>
+            <p>This layout uses Flexbox and CSS Grid.</p>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>HTML</h3>
+                    <p>HTML creates the structure of a webpage.</p>
+                </div>
+
+                <div class="card">
+                    <h3>CSS</h3>
+                    <p>CSS adds colors, fonts and styling.</p>
+                </div>
+
+                <div class="card">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript adds functionality and interaction.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Activity 4: Dynamic To-Do List -->
+        <section id="todo" class="section">
+            <h2>3. Dynamic To-Do List</h2>
+            <p>Add your daily tasks and remove them when completed.</p>
+
+            <div class="todo-input">
+                <input type="text" id="taskInput"
+                       placeholder="Enter a new task">
+
+                <button id="addTaskBtn" type="button">
+                    Add Task
+                </button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created as part of AICTE Internship at ApexPlanet Software Pvt. Ltd.</p>
+        <p>Task 2 - Intermediate Web Development</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
